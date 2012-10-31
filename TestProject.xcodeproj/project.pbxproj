@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF01FE1E1641156200C0500B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF01FE1D1641156200C0500B /* UIKit.framework */; };
+		EF01FE201641156200C0500B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF01FE1F1641156200C0500B /* Foundation.framework */; };
+		EF01FE221641156200C0500B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF01FE211641156200C0500B /* CoreGraphics.framework */; };
+		EF01FE2E1641156200C0500B /* TPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01FE2D1641156200C0500B /* TPAppDelegate.m */; };
+		EF01FE541641160000C0500B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF01FE4F1641160000C0500B /* InfoPlist.strings */; };
+		EF01FE551641160000C0500B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01FE511641160000C0500B /* main.m */; };
+		EF01FE69164116EC00C0500B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EF01FE63164116EC00C0500B /* Default.png */; };
+		EF01FE6A164116EC00C0500B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF01FE64164116EC00C0500B /* Default@2x.png */; };
+		EF01FE6B164116EC00C0500B /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = EF01FE65164116EC00C0500B /* first.png */; };
+		EF01FE6C164116EC00C0500B /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF01FE66164116EC00C0500B /* first@2x.png */; };
+		EF01FE6D164116EC00C0500B /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = EF01FE67164116EC00C0500B /* second.png */; };
+		EF01FE6E164116EC00C0500B /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF01FE68164116EC00C0500B /* second@2x.png */; };
+		EF01FE7A1641171900C0500B /* TPFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01FE721641171900C0500B /* TPFirstViewController.m */; };
+		EF01FE7B1641171900C0500B /* TPFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF01FE731641171900C0500B /* TPFirstViewController.xib */; };
+		EF01FE7C1641171900C0500B /* TPSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01FE751641171900C0500B /* TPSecondViewController.m */; };
+		EF01FE7D1641171900C0500B /* TPSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF01FE761641171900C0500B /* TPSecondViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF01FE191641156200C0500B /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF01FE1D1641156200C0500B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF01FE1F1641156200C0500B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF01FE211641156200C0500B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF01FE2C1641156200C0500B /* TPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPAppDelegate.h; sourceTree = "<group>"; };
+		EF01FE2D1641156200C0500B /* TPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPAppDelegate.m; sourceTree = "<group>"; };
+		EF01FE501641160000C0500B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF01FE511641160000C0500B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF01FE521641160000C0500B /* TestProject-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TestProject-Info.plist"; sourceTree = "<group>"; };
+		EF01FE531641160000C0500B /* TestProject-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestProject-Prefix.pch"; sourceTree = "<group>"; };
+		EF01FE63164116EC00C0500B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		EF01FE64164116EC00C0500B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		EF01FE65164116EC00C0500B /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		EF01FE66164116EC00C0500B /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		EF01FE67164116EC00C0500B /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		EF01FE68164116EC00C0500B /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		EF01FE711641171900C0500B /* TPFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPFirstViewController.h; sourceTree = "<group>"; };
+		EF01FE721641171900C0500B /* TPFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPFirstViewController.m; sourceTree = "<group>"; };
+		EF01FE731641171900C0500B /* TPFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPFirstViewController.xib; sourceTree = "<group>"; };
+		EF01FE741641171900C0500B /* TPSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSecondViewController.h; sourceTree = "<group>"; };
+		EF01FE751641171900C0500B /* TPSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSecondViewController.m; sourceTree = "<group>"; };
+		EF01FE761641171900C0500B /* TPSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPSecondViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF01FE161641156200C0500B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF01FE1E1641156200C0500B /* UIKit.framework in Frameworks */,
+				EF01FE201641156200C0500B /* Foundation.framework in Frameworks */,
+				EF01FE221641156200C0500B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF01FE0E1641156200C0500B = {
+			isa = PBXGroup;
+			children = (
+				EF01FE231641156200C0500B /* TestProject */,
+				EF01FE1C1641156200C0500B /* Frameworks */,
+				EF01FE1A1641156200C0500B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF01FE1A1641156200C0500B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF01FE191641156200C0500B /* TestProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF01FE1C1641156200C0500B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF01FE1D1641156200C0500B /* UIKit.framework */,
+				EF01FE1F1641156200C0500B /* Foundation.framework */,
+				EF01FE211641156200C0500B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF01FE231641156200C0500B /* TestProject */ = {
+			isa = PBXGroup;
+			children = (
+				EF01FE2C1641156200C0500B /* TPAppDelegate.h */,
+				EF01FE2D1641156200C0500B /* TPAppDelegate.m */,
+				EF01FE6F1641171900C0500B /* Classes */,
+				EF01FE61164116EC00C0500B /* Resources */,
+				EF01FE4E1641160000C0500B /* Supporting Files */,
+			);
+			path = TestProject;
+			sourceTree = "<group>";
+		};
+		EF01FE4E1641160000C0500B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF01FE4F1641160000C0500B /* InfoPlist.strings */,
+				EF01FE511641160000C0500B /* main.m */,
+				EF01FE521641160000C0500B /* TestProject-Info.plist */,
+				EF01FE531641160000C0500B /* TestProject-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF01FE61164116EC00C0500B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF01FE62164116EC00C0500B /* Graphics */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF01FE62164116EC00C0500B /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				EF01FE63164116EC00C0500B /* Default.png */,
+				EF01FE64164116EC00C0500B /* Default@2x.png */,
+				EF01FE65164116EC00C0500B /* first.png */,
+				EF01FE66164116EC00C0500B /* first@2x.png */,
+				EF01FE67164116EC00C0500B /* second.png */,
+				EF01FE68164116EC00C0500B /* second@2x.png */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		EF01FE6F1641171900C0500B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EF01FE701641171900C0500B /* Controllers */,
+				EF01FE771641171900C0500B /* Models */,
+				EF01FE781641171900C0500B /* Networking */,
+				EF01FE791641171900C0500B /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EF01FE701641171900C0500B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF01FE711641171900C0500B /* TPFirstViewController.h */,
+				EF01FE721641171900C0500B /* TPFirstViewController.m */,
+				EF01FE731641171900C0500B /* TPFirstViewController.xib */,
+				EF01FE741641171900C0500B /* TPSecondViewController.h */,
+				EF01FE751641171900C0500B /* TPSecondViewController.m */,
+				EF01FE761641171900C0500B /* TPSecondViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EF01FE771641171900C0500B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF01FE781641171900C0500B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		EF01FE791641171900C0500B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF01FE181641156200C0500B /* TestProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF01FE4B1641156200C0500B /* Build configuration list for PBXNativeTarget "TestProject" */;
+			buildPhases = (
+				EF01FE151641156200C0500B /* Sources */,
+				EF01FE161641156200C0500B /* Frameworks */,
+				EF01FE171641156200C0500B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestProject;
+			productName = TestProject;
+			productReference = EF01FE191641156200C0500B /* TestProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF01FE101641156200C0500B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TP;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Tulusha.com;
+			};
+			buildConfigurationList = EF01FE131641156200C0500B /* Build configuration list for PBXProject "TestProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EF01FE0E1641156200C0500B;
+			productRefGroup = EF01FE1A1641156200C0500B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF01FE181641156200C0500B /* TestProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF01FE171641156200C0500B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF01FE541641160000C0500B /* InfoPlist.strings in Resources */,
+				EF01FE69164116EC00C0500B /* Default.png in Resources */,
+				EF01FE6A164116EC00C0500B /* Default@2x.png in Resources */,
+				EF01FE6B164116EC00C0500B /* first.png in Resources */,
+				EF01FE6C164116EC00C0500B /* first@2x.png in Resources */,
+				EF01FE6D164116EC00C0500B /* second.png in Resources */,
+				EF01FE6E164116EC00C0500B /* second@2x.png in Resources */,
+				EF01FE7B1641171900C0500B /* TPFirstViewController.xib in Resources */,
+				EF01FE7D1641171900C0500B /* TPSecondViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF01FE151641156200C0500B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF01FE2E1641156200C0500B /* TPAppDelegate.m in Sources */,
+				EF01FE551641160000C0500B /* main.m in Sources */,
+				EF01FE7A1641171900C0500B /* TPFirstViewController.m in Sources */,
+				EF01FE7C1641171900C0500B /* TPSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF01FE4F1641160000C0500B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF01FE501641160000C0500B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF01FE491641156200C0500B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF01FE4A1641156200C0500B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF01FE4C1641156200C0500B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestProject/Supporting Files/TestProject-Prefix.pch";
+				INFOPLIST_FILE = "TestProject/Supporting Files/TestProject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EF01FE4D1641156200C0500B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestProject/Supporting Files/TestProject-Prefix.pch";
+				INFOPLIST_FILE = "TestProject/Supporting Files/TestProject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF01FE131641156200C0500B /* Build configuration list for PBXProject "TestProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF01FE491641156200C0500B /* Debug */,
+				EF01FE4A1641156200C0500B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF01FE4B1641156200C0500B /* Build configuration list for PBXNativeTarget "TestProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF01FE4C1641156200C0500B /* Debug */,
+				EF01FE4D1641156200C0500B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF01FE101641156200C0500B /* Project object */;
+}

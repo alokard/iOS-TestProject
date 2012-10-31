@@ -1,0 +1,27 @@
+.DS_Store
+
+*.xcodeproj/**
+!*.xcodeproj/*.pbxproj
+!*.xcodeproj/xcshareddata/xcschemes/*.xcscheme
+
+*.xcworkspace/**
+!*.xcworkspace/*.xcworkspacedata
+
+Pods
+Podfile.lock
+*.idea
+
+# xcode noise
+build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# vim noise
+*~
+*.swp
+
+build
+build.output
+pkg
