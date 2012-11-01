@@ -6,7 +6,22 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		EF15C6EB1642722300EE7EB6 /* mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = EF15C6EC1642722300EE7EB6 /* Build configuration list for PBXAggregateTarget "mogenerator" */;
+			buildPhases = (
+				EF15C6EF1642722B00EE7EB6 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = mogenerator;
+			productName = mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		D61854C68999F717C7094FF6 /* TPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6185FC4C957C42A1BFCCED0 /* TPBaseViewController.m */; };
 		EF01FE1E1641156200C0500B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF01FE1D1641156200C0500B /* UIKit.framework */; };
 		EF01FE201641156200C0500B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF01FE1F1641156200C0500B /* Foundation.framework */; };
 		EF01FE221641156200C0500B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF01FE211641156200C0500B /* CoreGraphics.framework */; };
@@ -15,21 +30,44 @@
 		EF01FE551641160000C0500B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01FE511641160000C0500B /* main.m */; };
 		EF01FE69164116EC00C0500B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EF01FE63164116EC00C0500B /* Default.png */; };
 		EF01FE6A164116EC00C0500B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF01FE64164116EC00C0500B /* Default@2x.png */; };
-		EF01FE6B164116EC00C0500B /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = EF01FE65164116EC00C0500B /* first.png */; };
-		EF01FE6C164116EC00C0500B /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF01FE66164116EC00C0500B /* first@2x.png */; };
-		EF01FE6D164116EC00C0500B /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = EF01FE67164116EC00C0500B /* second.png */; };
-		EF01FE6E164116EC00C0500B /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF01FE68164116EC00C0500B /* second@2x.png */; };
-		EF01FE7A1641171900C0500B /* TPFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01FE721641171900C0500B /* TPFirstViewController.m */; };
-		EF01FE7B1641171900C0500B /* TPFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF01FE731641171900C0500B /* TPFirstViewController.xib */; };
-		EF01FE7C1641171900C0500B /* TPSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01FE751641171900C0500B /* TPSecondViewController.m */; };
-		EF01FE7D1641171900C0500B /* TPSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF01FE761641171900C0500B /* TPSecondViewController.xib */; };
+		EF15C6B7164268A400EE7EB6 /* TPServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C6AC164268A400EE7EB6 /* TPServiceViewController.m */; };
+		EF15C6B8164268A400EE7EB6 /* TPServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF15C6AD164268A400EE7EB6 /* TPServiceViewController.xib */; };
+		EF15C6B9164268A400EE7EB6 /* TPListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C6B0164268A400EE7EB6 /* TPListViewController.m */; };
+		EF15C6BA164268A400EE7EB6 /* TPListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF15C6B1164268A400EE7EB6 /* TPListViewController.xib */; };
+		EF15C6BB164268A400EE7EB6 /* TPGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C6B4164268A400EE7EB6 /* TPGalleryViewController.m */; };
+		EF15C6BC164268A400EE7EB6 /* TPGalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF15C6B5164268A400EE7EB6 /* TPGalleryViewController.xib */; };
+		EF15C6DB16426AC800EE7EB6 /* ServiceTabBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EF15C6D916426AC800EE7EB6 /* ServiceTabBarIcon.png */; };
+		EF15C6DC16426AC800EE7EB6 /* ServiceTabBarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF15C6DA16426AC800EE7EB6 /* ServiceTabBarIcon@2x.png */; };
+		EF15C6DF16426AEB00EE7EB6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF15C6DE16426AEB00EE7EB6 /* Localizable.strings */; };
+		EF15C6E316426D9F00EE7EB6 /* MainModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF15C6E116426D9F00EE7EB6 /* MainModel.xcdatamodeld */; };
+		EF15C7051642753700EE7EB6 /* _TPAccountant.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C6FC1642753700EE7EB6 /* _TPAccountant.m */; };
+		EF15C7061642753700EE7EB6 /* _TPBaseEmployeeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C6FE1642753700EE7EB6 /* _TPBaseEmployeeModel.m */; };
+		EF15C7071642753700EE7EB6 /* _TPDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C7001642753700EE7EB6 /* _TPDirector.m */; };
+		EF15C7081642753700EE7EB6 /* _TPEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C7021642753700EE7EB6 /* _TPEmployee.m */; };
+		EF15C7091642753700EE7EB6 /* _TPTime.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C7041642753700EE7EB6 /* _TPTime.m */; };
+		EF15C7151642754500EE7EB6 /* TPAccountant.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C70C1642754500EE7EB6 /* TPAccountant.m */; };
+		EF15C7161642754500EE7EB6 /* TPBaseEmployeeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C70E1642754500EE7EB6 /* TPBaseEmployeeModel.m */; };
+		EF15C7171642754500EE7EB6 /* TPDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C7101642754500EE7EB6 /* TPDirector.m */; };
+		EF15C7181642754500EE7EB6 /* TPEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C7121642754500EE7EB6 /* TPEmployee.m */; };
+		EF15C7191642754500EE7EB6 /* TPTime.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C7141642754500EE7EB6 /* TPTime.m */; };
+		EFA3CB171642653F005F97D4 /* ListTabBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA3CB101642653F005F97D4 /* ListTabBarIcon.png */; };
+		EFA3CB181642653F005F97D4 /* ListTabBarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA3CB111642653F005F97D4 /* ListTabBarIcon@2x.png */; };
+		EFA3CB191642653F005F97D4 /* GalleryTabBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA3CB121642653F005F97D4 /* GalleryTabBarIcon.png */; };
+		EFA3CB1A1642653F005F97D4 /* GalleryTabBarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA3CB131642653F005F97D4 /* GalleryTabBarIcon@2x.png */; };
+		EFA3CB1B1642653F005F97D4 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA3CB151642653F005F97D4 /* Icon.png */; };
+		EFA3CB1C1642653F005F97D4 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA3CB161642653F005F97D4 /* Icon@2x.png */; };
+		F6FEEEA6E5654CA58D5DB906 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47C29405805647C39BFE530B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47C29405805647C39BFE530B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B31DCC333F942499B8F97E8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		D6185373F1C3A739454B444E /* TPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPBaseViewController.h; sourceTree = "<group>"; };
+		D6185FC4C957C42A1BFCCED0 /* TPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPBaseViewController.m; sourceTree = "<group>"; };
 		EF01FE191641156200C0500B /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF01FE1D1641156200C0500B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		EF01FE1F1641156200C0500B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		EF01FE211641156200C0500B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF01FE1D1641156200C0500B /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF01FE1F1641156200C0500B /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF01FE211641156200C0500B /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		EF01FE2C1641156200C0500B /* TPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPAppDelegate.h; sourceTree = "<group>"; };
 		EF01FE2D1641156200C0500B /* TPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPAppDelegate.m; sourceTree = "<group>"; };
 		EF01FE501641160000C0500B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -38,16 +76,46 @@
 		EF01FE531641160000C0500B /* TestProject-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestProject-Prefix.pch"; sourceTree = "<group>"; };
 		EF01FE63164116EC00C0500B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		EF01FE64164116EC00C0500B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		EF01FE65164116EC00C0500B /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		EF01FE66164116EC00C0500B /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		EF01FE67164116EC00C0500B /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		EF01FE68164116EC00C0500B /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		EF01FE711641171900C0500B /* TPFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPFirstViewController.h; sourceTree = "<group>"; };
-		EF01FE721641171900C0500B /* TPFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPFirstViewController.m; sourceTree = "<group>"; };
-		EF01FE731641171900C0500B /* TPFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPFirstViewController.xib; sourceTree = "<group>"; };
-		EF01FE741641171900C0500B /* TPSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSecondViewController.h; sourceTree = "<group>"; };
-		EF01FE751641171900C0500B /* TPSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSecondViewController.m; sourceTree = "<group>"; };
-		EF01FE761641171900C0500B /* TPSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPSecondViewController.xib; sourceTree = "<group>"; };
+		EF15C6AB164268A400EE7EB6 /* TPServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPServiceViewController.h; sourceTree = "<group>"; };
+		EF15C6AC164268A400EE7EB6 /* TPServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPServiceViewController.m; sourceTree = "<group>"; };
+		EF15C6AD164268A400EE7EB6 /* TPServiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPServiceViewController.xib; sourceTree = "<group>"; };
+		EF15C6AF164268A400EE7EB6 /* TPListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPListViewController.h; sourceTree = "<group>"; };
+		EF15C6B0164268A400EE7EB6 /* TPListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPListViewController.m; sourceTree = "<group>"; };
+		EF15C6B1164268A400EE7EB6 /* TPListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPListViewController.xib; sourceTree = "<group>"; };
+		EF15C6B3164268A400EE7EB6 /* TPGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPGalleryViewController.h; sourceTree = "<group>"; };
+		EF15C6B4164268A400EE7EB6 /* TPGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPGalleryViewController.m; sourceTree = "<group>"; };
+		EF15C6B5164268A400EE7EB6 /* TPGalleryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPGalleryViewController.xib; sourceTree = "<group>"; };
+		EF15C6D916426AC800EE7EB6 /* ServiceTabBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ServiceTabBarIcon.png; sourceTree = "<group>"; };
+		EF15C6DA16426AC800EE7EB6 /* ServiceTabBarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ServiceTabBarIcon@2x.png"; sourceTree = "<group>"; };
+		EF15C6DE16426AEB00EE7EB6 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		EF15C6E216426D9F00EE7EB6 /* MainModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MainModel.xcdatamodel; sourceTree = "<group>"; };
+		EF15C6FB1642753700EE7EB6 /* _TPAccountant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TPAccountant.h; sourceTree = "<group>"; };
+		EF15C6FC1642753700EE7EB6 /* _TPAccountant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _TPAccountant.m; sourceTree = "<group>"; };
+		EF15C6FD1642753700EE7EB6 /* _TPBaseEmployeeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TPBaseEmployeeModel.h; sourceTree = "<group>"; };
+		EF15C6FE1642753700EE7EB6 /* _TPBaseEmployeeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _TPBaseEmployeeModel.m; sourceTree = "<group>"; };
+		EF15C6FF1642753700EE7EB6 /* _TPDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TPDirector.h; sourceTree = "<group>"; };
+		EF15C7001642753700EE7EB6 /* _TPDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _TPDirector.m; sourceTree = "<group>"; };
+		EF15C7011642753700EE7EB6 /* _TPEmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TPEmployee.h; sourceTree = "<group>"; };
+		EF15C7021642753700EE7EB6 /* _TPEmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _TPEmployee.m; sourceTree = "<group>"; };
+		EF15C7031642753700EE7EB6 /* _TPTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TPTime.h; sourceTree = "<group>"; };
+		EF15C7041642753700EE7EB6 /* _TPTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _TPTime.m; sourceTree = "<group>"; };
+		EF15C70A1642754500EE7EB6 /* Models.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
+		EF15C70B1642754500EE7EB6 /* TPAccountant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPAccountant.h; sourceTree = "<group>"; };
+		EF15C70C1642754500EE7EB6 /* TPAccountant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPAccountant.m; sourceTree = "<group>"; };
+		EF15C70D1642754500EE7EB6 /* TPBaseEmployeeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPBaseEmployeeModel.h; sourceTree = "<group>"; };
+		EF15C70E1642754500EE7EB6 /* TPBaseEmployeeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPBaseEmployeeModel.m; sourceTree = "<group>"; };
+		EF15C70F1642754500EE7EB6 /* TPDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPDirector.h; sourceTree = "<group>"; };
+		EF15C7101642754500EE7EB6 /* TPDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPDirector.m; sourceTree = "<group>"; };
+		EF15C7111642754500EE7EB6 /* TPEmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPEmployee.h; sourceTree = "<group>"; };
+		EF15C7121642754500EE7EB6 /* TPEmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPEmployee.m; sourceTree = "<group>"; };
+		EF15C7131642754500EE7EB6 /* TPTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPTime.h; sourceTree = "<group>"; };
+		EF15C7141642754500EE7EB6 /* TPTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPTime.m; sourceTree = "<group>"; };
+		EFA3CB101642653F005F97D4 /* ListTabBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ListTabBarIcon.png; sourceTree = "<group>"; };
+		EFA3CB111642653F005F97D4 /* ListTabBarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListTabBarIcon@2x.png"; sourceTree = "<group>"; };
+		EFA3CB121642653F005F97D4 /* GalleryTabBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GalleryTabBarIcon.png; sourceTree = "<group>"; };
+		EFA3CB131642653F005F97D4 /* GalleryTabBarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GalleryTabBarIcon@2x.png"; sourceTree = "<group>"; };
+		EFA3CB151642653F005F97D4 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		EFA3CB161642653F005F97D4 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +126,7 @@
 				EF01FE1E1641156200C0500B /* UIKit.framework in Frameworks */,
 				EF01FE201641156200C0500B /* Foundation.framework in Frameworks */,
 				EF01FE221641156200C0500B /* CoreGraphics.framework in Frameworks */,
+				F6FEEEA6E5654CA58D5DB906 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +139,7 @@
 				EF01FE231641156200C0500B /* TestProject */,
 				EF01FE1C1641156200C0500B /* Frameworks */,
 				EF01FE1A1641156200C0500B /* Products */,
+				5B31DCC333F942499B8F97E8 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +157,7 @@
 				EF01FE1D1641156200C0500B /* UIKit.framework */,
 				EF01FE1F1641156200C0500B /* Foundation.framework */,
 				EF01FE211641156200C0500B /* CoreGraphics.framework */,
+				47C29405805647C39BFE530B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -106,6 +177,7 @@
 		EF01FE4E1641160000C0500B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EF15C6DE16426AEB00EE7EB6 /* Localizable.strings */,
 				EF01FE4F1641160000C0500B /* InfoPlist.strings */,
 				EF01FE511641160000C0500B /* main.m */,
 				EF01FE521641160000C0500B /* TestProject-Info.plist */,
@@ -125,12 +197,10 @@
 		EF01FE62164116EC00C0500B /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				EFA3CB0F1642653F005F97D4 /* TabBar */,
+				EFA3CB141642653F005F97D4 /* Icon */,
 				EF01FE63164116EC00C0500B /* Default.png */,
 				EF01FE64164116EC00C0500B /* Default@2x.png */,
-				EF01FE65164116EC00C0500B /* first.png */,
-				EF01FE66164116EC00C0500B /* first@2x.png */,
-				EF01FE67164116EC00C0500B /* second.png */,
-				EF01FE68164116EC00C0500B /* second@2x.png */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
@@ -149,12 +219,10 @@
 		EF01FE701641171900C0500B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EF01FE711641171900C0500B /* TPFirstViewController.h */,
-				EF01FE721641171900C0500B /* TPFirstViewController.m */,
-				EF01FE731641171900C0500B /* TPFirstViewController.xib */,
-				EF01FE741641171900C0500B /* TPSecondViewController.h */,
-				EF01FE751641171900C0500B /* TPSecondViewController.m */,
-				EF01FE761641171900C0500B /* TPSecondViewController.xib */,
+				EF15C6B6164268A400EE7EB6 /* Base View Controllers */,
+				EF15C6B2164268A400EE7EB6 /* Gallery View Controller */,
+				EF15C6AE164268A400EE7EB6 /* List View Controller */,
+				EF15C6AA164268A400EE7EB6 /* ServiceViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -162,6 +230,18 @@
 		EF01FE771641171900C0500B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EF15C70A1642754500EE7EB6 /* Models.h */,
+				EF15C70B1642754500EE7EB6 /* TPAccountant.h */,
+				EF15C70C1642754500EE7EB6 /* TPAccountant.m */,
+				EF15C70D1642754500EE7EB6 /* TPBaseEmployeeModel.h */,
+				EF15C70E1642754500EE7EB6 /* TPBaseEmployeeModel.m */,
+				EF15C70F1642754500EE7EB6 /* TPDirector.h */,
+				EF15C7101642754500EE7EB6 /* TPDirector.m */,
+				EF15C7111642754500EE7EB6 /* TPEmployee.h */,
+				EF15C7121642754500EE7EB6 /* TPEmployee.m */,
+				EF15C7131642754500EE7EB6 /* TPTime.h */,
+				EF15C7141642754500EE7EB6 /* TPTime.m */,
+				EF15C6E016426D8200EE7EB6 /* CoreData */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,6 +260,93 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		EF15C6AA164268A400EE7EB6 /* ServiceViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF15C6AB164268A400EE7EB6 /* TPServiceViewController.h */,
+				EF15C6AC164268A400EE7EB6 /* TPServiceViewController.m */,
+				EF15C6AD164268A400EE7EB6 /* TPServiceViewController.xib */,
+			);
+			path = ServiceViewController;
+			sourceTree = "<group>";
+		};
+		EF15C6AE164268A400EE7EB6 /* List View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF15C6AF164268A400EE7EB6 /* TPListViewController.h */,
+				EF15C6B0164268A400EE7EB6 /* TPListViewController.m */,
+				EF15C6B1164268A400EE7EB6 /* TPListViewController.xib */,
+			);
+			path = "List View Controller";
+			sourceTree = "<group>";
+		};
+		EF15C6B2164268A400EE7EB6 /* Gallery View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF15C6B3164268A400EE7EB6 /* TPGalleryViewController.h */,
+				EF15C6B4164268A400EE7EB6 /* TPGalleryViewController.m */,
+				EF15C6B5164268A400EE7EB6 /* TPGalleryViewController.xib */,
+			);
+			path = "Gallery View Controller";
+			sourceTree = "<group>";
+		};
+		EF15C6B6164268A400EE7EB6 /* Base View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6185373F1C3A739454B444E /* TPBaseViewController.h */,
+				D6185FC4C957C42A1BFCCED0 /* TPBaseViewController.m */,
+			);
+			path = "Base View Controllers";
+			sourceTree = "<group>";
+		};
+		EF15C6E016426D8200EE7EB6 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				EF15C6FA1642753700EE7EB6 /* RawModels */,
+				EF15C6E116426D9F00EE7EB6 /* MainModel.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		EF15C6FA1642753700EE7EB6 /* RawModels */ = {
+			isa = PBXGroup;
+			children = (
+				EF15C6FB1642753700EE7EB6 /* _TPAccountant.h */,
+				EF15C6FC1642753700EE7EB6 /* _TPAccountant.m */,
+				EF15C6FD1642753700EE7EB6 /* _TPBaseEmployeeModel.h */,
+				EF15C6FE1642753700EE7EB6 /* _TPBaseEmployeeModel.m */,
+				EF15C6FF1642753700EE7EB6 /* _TPDirector.h */,
+				EF15C7001642753700EE7EB6 /* _TPDirector.m */,
+				EF15C7011642753700EE7EB6 /* _TPEmployee.h */,
+				EF15C7021642753700EE7EB6 /* _TPEmployee.m */,
+				EF15C7031642753700EE7EB6 /* _TPTime.h */,
+				EF15C7041642753700EE7EB6 /* _TPTime.m */,
+			);
+			path = RawModels;
+			sourceTree = "<group>";
+		};
+		EFA3CB0F1642653F005F97D4 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EFA3CB101642653F005F97D4 /* ListTabBarIcon.png */,
+				EFA3CB111642653F005F97D4 /* ListTabBarIcon@2x.png */,
+				EFA3CB121642653F005F97D4 /* GalleryTabBarIcon.png */,
+				EFA3CB131642653F005F97D4 /* GalleryTabBarIcon@2x.png */,
+				EF15C6D916426AC800EE7EB6 /* ServiceTabBarIcon.png */,
+				EF15C6DA16426AC800EE7EB6 /* ServiceTabBarIcon@2x.png */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		EFA3CB141642653F005F97D4 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				EFA3CB151642653F005F97D4 /* Icon.png */,
+				EFA3CB161642653F005F97D4 /* Icon@2x.png */,
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,6 +357,7 @@
 				EF01FE151641156200C0500B /* Sources */,
 				EF01FE161641156200C0500B /* Frameworks */,
 				EF01FE171641156200C0500B /* Resources */,
+				54DBD3746DF047BDA6280731 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,6 +391,7 @@
 			projectRoot = "";
 			targets = (
 				EF01FE181641156200C0500B /* TestProject */,
+				EF15C6EB1642722300EE7EB6 /* mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -235,16 +404,52 @@
 				EF01FE541641160000C0500B /* InfoPlist.strings in Resources */,
 				EF01FE69164116EC00C0500B /* Default.png in Resources */,
 				EF01FE6A164116EC00C0500B /* Default@2x.png in Resources */,
-				EF01FE6B164116EC00C0500B /* first.png in Resources */,
-				EF01FE6C164116EC00C0500B /* first@2x.png in Resources */,
-				EF01FE6D164116EC00C0500B /* second.png in Resources */,
-				EF01FE6E164116EC00C0500B /* second@2x.png in Resources */,
-				EF01FE7B1641171900C0500B /* TPFirstViewController.xib in Resources */,
-				EF01FE7D1641171900C0500B /* TPSecondViewController.xib in Resources */,
+				EFA3CB171642653F005F97D4 /* ListTabBarIcon.png in Resources */,
+				EFA3CB181642653F005F97D4 /* ListTabBarIcon@2x.png in Resources */,
+				EFA3CB191642653F005F97D4 /* GalleryTabBarIcon.png in Resources */,
+				EFA3CB1A1642653F005F97D4 /* GalleryTabBarIcon@2x.png in Resources */,
+				EFA3CB1B1642653F005F97D4 /* Icon.png in Resources */,
+				EFA3CB1C1642653F005F97D4 /* Icon@2x.png in Resources */,
+				EF15C6B8164268A400EE7EB6 /* TPServiceViewController.xib in Resources */,
+				EF15C6BA164268A400EE7EB6 /* TPListViewController.xib in Resources */,
+				EF15C6BC164268A400EE7EB6 /* TPGalleryViewController.xib in Resources */,
+				EF15C6DB16426AC800EE7EB6 /* ServiceTabBarIcon.png in Resources */,
+				EF15C6DC16426AC800EE7EB6 /* ServiceTabBarIcon@2x.png in Resources */,
+				EF15C6DF16426AEB00EE7EB6 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54DBD3746DF047BDA6280731 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		EF15C6EF1642722B00EE7EB6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"TestProject/Classes/Models\"\nmogenerator --machine-dir \"./CoreData/RawModels\" --includeh Models.h --template-var arc=true -m ./CoreData/MainModel.xcdatamodeld/MainModel.xcdatamodel\necho Success";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF01FE151641156200C0500B /* Sources */ = {
@@ -253,8 +458,21 @@
 			files = (
 				EF01FE2E1641156200C0500B /* TPAppDelegate.m in Sources */,
 				EF01FE551641160000C0500B /* main.m in Sources */,
-				EF01FE7A1641171900C0500B /* TPFirstViewController.m in Sources */,
-				EF01FE7C1641171900C0500B /* TPSecondViewController.m in Sources */,
+				EF15C6B7164268A400EE7EB6 /* TPServiceViewController.m in Sources */,
+				EF15C6B9164268A400EE7EB6 /* TPListViewController.m in Sources */,
+				EF15C6BB164268A400EE7EB6 /* TPGalleryViewController.m in Sources */,
+				D61854C68999F717C7094FF6 /* TPBaseViewController.m in Sources */,
+				EF15C6E316426D9F00EE7EB6 /* MainModel.xcdatamodeld in Sources */,
+				EF15C7051642753700EE7EB6 /* _TPAccountant.m in Sources */,
+				EF15C7061642753700EE7EB6 /* _TPBaseEmployeeModel.m in Sources */,
+				EF15C7071642753700EE7EB6 /* _TPDirector.m in Sources */,
+				EF15C7081642753700EE7EB6 /* _TPEmployee.m in Sources */,
+				EF15C7091642753700EE7EB6 /* _TPTime.m in Sources */,
+				EF15C7151642754500EE7EB6 /* TPAccountant.m in Sources */,
+				EF15C7161642754500EE7EB6 /* TPBaseEmployeeModel.m in Sources */,
+				EF15C7171642754500EE7EB6 /* TPDirector.m in Sources */,
+				EF15C7181642754500EE7EB6 /* TPEmployee.m in Sources */,
+				EF15C7191642754500EE7EB6 /* TPTime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +539,7 @@
 		};
 		EF01FE4C1641156200C0500B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B31DCC333F942499B8F97E8 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestProject/Supporting Files/TestProject-Prefix.pch";
@@ -333,6 +552,7 @@
 		};
 		EF01FE4D1641156200C0500B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B31DCC333F942499B8F97E8 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestProject/Supporting Files/TestProject-Prefix.pch";
@@ -340,6 +560,20 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EF15C6ED1642722300EE7EB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF15C6EE1642722300EE7EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -364,7 +598,28 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		EF15C6EC1642722300EE7EB6 /* Build configuration list for PBXAggregateTarget "mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF15C6ED1642722300EE7EB6 /* Debug */,
+				EF15C6EE1642722300EE7EB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EF15C6E116426D9F00EE7EB6 /* MainModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF15C6E216426D9F00EE7EB6 /* MainModel.xcdatamodel */,
+			);
+			currentVersion = EF15C6E216426D9F00EE7EB6 /* MainModel.xcdatamodel */;
+			path = MainModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EF01FE101641156200C0500B /* Project object */;
 }

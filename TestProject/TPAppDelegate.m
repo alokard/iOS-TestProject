@@ -7,10 +7,9 @@
 //
 
 #import "TPAppDelegate.h"
-
-#import "TPFirstViewController.h"
-
-#import "TPSecondViewController.h"
+#import "TPListViewController.h"
+#import "TPGalleryViewController.h"
+#import "TPServiceViewController.h"
 
 @implementation TPAppDelegate
 
@@ -23,12 +22,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [application setStatusBarHidden:NO];
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    UIViewController *viewController1 = [[[TPFirstViewController alloc] initWithNibName:@"TPFirstViewController" bundle:nil] autorelease];
-    UIViewController *viewController2 = [[[TPSecondViewController alloc] initWithNibName:@"TPSecondViewController" bundle:nil] autorelease];
+    UIViewController *listViewController = [[TPListViewController alloc] initWithNibName:@"TPListViewController" bundle:nil];
+    UINavigationController *listNavigationController = [[UINavigationController alloc] initWithRootViewController:listViewController];
+    listNavigationController.navigationBar.tintColor = [UIColor blackColor];
+    [listViewController release];
+
+    UIViewController *galleryViewController = [[TPGalleryViewController alloc] initWithNibName:@"TPGalleryViewController" bundle:nil];
+    UINavigationController *galleryNavigationController = [[UINavigationController alloc] initWithRootViewController:galleryViewController];
+    galleryNavigationController.navigationBar.tintColor = [UIColor blackColor];
+    [galleryViewController release];
+
+    UIViewController *serviceViewController = [[TPServiceViewController alloc] initWithNibName:@"TPServiceViewController" bundle:nil];
+    UINavigationController *serviceNavigationController = [[UINavigationController alloc] initWithRootViewController:serviceViewController];
+    serviceNavigationController.navigationBar.tintColor = [UIColor blackColor];
+    [serviceViewController release];
+
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
-    self.tabBarController.viewControllers = @[viewController1, viewController2];
+    self.tabBarController.viewControllers = @[listNavigationController, galleryNavigationController, serviceNavigationController];
+    [listNavigationController release];
+    [galleryNavigationController release];
+    [serviceNavigationController release];
+
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
