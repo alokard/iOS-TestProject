@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 Tulusha.com. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "TPBaseViewController.h"
+#import "TPBasePhotoBrowserController.h"
 
-@interface TPGalleryViewController : TPBaseViewController
+@interface TPGalleryViewController : TPBaseViewController <TPBasePhotoBrowserDelegate>
 
 @end

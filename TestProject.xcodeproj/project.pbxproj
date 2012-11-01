@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		D61853F96A0A2A9589BC8EC5 /* TPBasePhotoBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6185124271FB7E703108D18 /* TPBasePhotoBrowserController.m */; };
 		D61854C68999F717C7094FF6 /* TPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6185FC4C957C42A1BFCCED0 /* TPBaseViewController.m */; };
 		D6185992D3A8FEBE76F9173B /* TPDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D6185831326C3DE0CFE6B08C /* TPDateHelper.m */; };
 		EF01FE1E1641156200C0500B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF01FE1D1641156200C0500B /* UIKit.framework */; };
@@ -55,6 +56,21 @@
 		EF15C7241642807C00EE7EB6 /* TPEmployeeDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C7221642807C00EE7EB6 /* TPEmployeeDetailsViewController.m */; };
 		EF15C7251642807C00EE7EB6 /* TPEmployeeDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF15C7231642807C00EE7EB6 /* TPEmployeeDetailsViewController.xib */; };
 		EF15C7C61642A23A00EE7EB6 /* TPCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C7C51642A23A00EE7EB6 /* TPCoreDataManager.m */; };
+		EF15C80A1643161A00EE7EB6 /* 1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF15C7FB1643161A00EE7EB6 /* 1.JPG */; };
+		EF15C80B1643161A00EE7EB6 /* 10.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF15C7FC1643161A00EE7EB6 /* 10.JPG */; };
+		EF15C80C1643161A00EE7EB6 /* 11.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF15C7FD1643161A00EE7EB6 /* 11.JPG */; };
+		EF15C80D1643161A00EE7EB6 /* 12.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF15C7FE1643161A00EE7EB6 /* 12.JPG */; };
+		EF15C80E1643161A00EE7EB6 /* 13.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF15C7FF1643161A00EE7EB6 /* 13.JPG */; };
+		EF15C80F1643161A00EE7EB6 /* 14.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF15C8001643161A00EE7EB6 /* 14.JPG */; };
+		EF15C8101643161A00EE7EB6 /* 15.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF15C8011643161A00EE7EB6 /* 15.JPG */; };
+		EF15C8111643161A00EE7EB6 /* 2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF15C8021643161A00EE7EB6 /* 2.JPG */; };
+		EF15C8121643161A00EE7EB6 /* 3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF15C8031643161A00EE7EB6 /* 3.JPG */; };
+		EF15C8131643161A00EE7EB6 /* 4.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF15C8041643161A00EE7EB6 /* 4.JPG */; };
+		EF15C8141643161A00EE7EB6 /* 5.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF15C8051643161A00EE7EB6 /* 5.JPG */; };
+		EF15C8151643161A00EE7EB6 /* 6.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF15C8061643161A00EE7EB6 /* 6.JPG */; };
+		EF15C8161643161A00EE7EB6 /* 7.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF15C8071643161A00EE7EB6 /* 7.JPG */; };
+		EF15C8171643161A00EE7EB6 /* 8.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF15C8081643161A00EE7EB6 /* 8.JPG */; };
+		EF15C8181643161A00EE7EB6 /* 9.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF15C8091643161A00EE7EB6 /* 9.JPG */; };
 		EFA3CB171642653F005F97D4 /* ListTabBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA3CB101642653F005F97D4 /* ListTabBarIcon.png */; };
 		EFA3CB181642653F005F97D4 /* ListTabBarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA3CB111642653F005F97D4 /* ListTabBarIcon@2x.png */; };
 		EFA3CB191642653F005F97D4 /* GalleryTabBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA3CB121642653F005F97D4 /* GalleryTabBarIcon.png */; };
@@ -68,8 +84,10 @@
 		47C29405805647C39BFE530B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B31DCC333F942499B8F97E8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		D618510A393B0166CC63FB09 /* TPDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPDateHelper.h; sourceTree = "<group>"; };
+		D6185124271FB7E703108D18 /* TPBasePhotoBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPBasePhotoBrowserController.m; sourceTree = "<group>"; };
 		D6185373F1C3A739454B444E /* TPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPBaseViewController.h; sourceTree = "<group>"; };
 		D6185831326C3DE0CFE6B08C /* TPDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPDateHelper.m; sourceTree = "<group>"; };
+		D6185F1619FC57934C3907A0 /* TPBasePhotoBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPBasePhotoBrowserController.h; sourceTree = "<group>"; };
 		D6185FC4C957C42A1BFCCED0 /* TPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPBaseViewController.m; sourceTree = "<group>"; };
 		EF01FE191641156200C0500B /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF01FE1D1641156200C0500B /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -123,6 +141,21 @@
 		EF15C7231642807C00EE7EB6 /* TPEmployeeDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPEmployeeDetailsViewController.xib; sourceTree = "<group>"; };
 		EF15C7C41642A23A00EE7EB6 /* TPCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPCoreDataManager.h; sourceTree = "<group>"; };
 		EF15C7C51642A23A00EE7EB6 /* TPCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPCoreDataManager.m; sourceTree = "<group>"; };
+		EF15C7FB1643161A00EE7EB6 /* 1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.JPG; sourceTree = "<group>"; };
+		EF15C7FC1643161A00EE7EB6 /* 10.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.JPG; sourceTree = "<group>"; };
+		EF15C7FD1643161A00EE7EB6 /* 11.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.JPG; sourceTree = "<group>"; };
+		EF15C7FE1643161A00EE7EB6 /* 12.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.JPG; sourceTree = "<group>"; };
+		EF15C7FF1643161A00EE7EB6 /* 13.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13.JPG; sourceTree = "<group>"; };
+		EF15C8001643161A00EE7EB6 /* 14.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14.JPG; sourceTree = "<group>"; };
+		EF15C8011643161A00EE7EB6 /* 15.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 15.JPG; sourceTree = "<group>"; };
+		EF15C8021643161A00EE7EB6 /* 2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.JPG; sourceTree = "<group>"; };
+		EF15C8031643161A00EE7EB6 /* 3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.JPG; sourceTree = "<group>"; };
+		EF15C8041643161A00EE7EB6 /* 4.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.JPG; sourceTree = "<group>"; };
+		EF15C8051643161A00EE7EB6 /* 5.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.JPG; sourceTree = "<group>"; };
+		EF15C8061643161A00EE7EB6 /* 6.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.JPG; sourceTree = "<group>"; };
+		EF15C8071643161A00EE7EB6 /* 7.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.JPG; sourceTree = "<group>"; };
+		EF15C8081643161A00EE7EB6 /* 8.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.JPG; sourceTree = "<group>"; };
+		EF15C8091643161A00EE7EB6 /* 9.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.JPG; sourceTree = "<group>"; };
 		EFA3CB101642653F005F97D4 /* ListTabBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ListTabBarIcon.png; sourceTree = "<group>"; };
 		EFA3CB111642653F005F97D4 /* ListTabBarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListTabBarIcon@2x.png"; sourceTree = "<group>"; };
 		EFA3CB121642653F005F97D4 /* GalleryTabBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GalleryTabBarIcon.png; sourceTree = "<group>"; };
@@ -221,6 +254,7 @@
 		EF01FE62164116EC00C0500B /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				EF15C7FA1643161A00EE7EB6 /* Gallery Images */,
 				EFA3CB0F1642653F005F97D4 /* TabBar */,
 				EFA3CB141642653F005F97D4 /* Icon */,
 				EF01FE63164116EC00C0500B /* Default.png */,
@@ -324,6 +358,8 @@
 			children = (
 				D6185373F1C3A739454B444E /* TPBaseViewController.h */,
 				D6185FC4C957C42A1BFCCED0 /* TPBaseViewController.m */,
+				D6185F1619FC57934C3907A0 /* TPBasePhotoBrowserController.h */,
+				D6185124271FB7E703108D18 /* TPBasePhotoBrowserController.m */,
 			);
 			path = "Base View Controllers";
 			sourceTree = "<group>";
@@ -361,6 +397,28 @@
 				EF15C7C51642A23A00EE7EB6 /* TPCoreDataManager.m */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		EF15C7FA1643161A00EE7EB6 /* Gallery Images */ = {
+			isa = PBXGroup;
+			children = (
+				EF15C7FB1643161A00EE7EB6 /* 1.JPG */,
+				EF15C7FC1643161A00EE7EB6 /* 10.JPG */,
+				EF15C7FD1643161A00EE7EB6 /* 11.JPG */,
+				EF15C7FE1643161A00EE7EB6 /* 12.JPG */,
+				EF15C7FF1643161A00EE7EB6 /* 13.JPG */,
+				EF15C8001643161A00EE7EB6 /* 14.JPG */,
+				EF15C8011643161A00EE7EB6 /* 15.JPG */,
+				EF15C8021643161A00EE7EB6 /* 2.JPG */,
+				EF15C8031643161A00EE7EB6 /* 3.JPG */,
+				EF15C8041643161A00EE7EB6 /* 4.JPG */,
+				EF15C8051643161A00EE7EB6 /* 5.JPG */,
+				EF15C8061643161A00EE7EB6 /* 6.JPG */,
+				EF15C8071643161A00EE7EB6 /* 7.JPG */,
+				EF15C8081643161A00EE7EB6 /* 8.JPG */,
+				EF15C8091643161A00EE7EB6 /* 9.JPG */,
+			);
+			path = "Gallery Images";
 			sourceTree = "<group>";
 		};
 		EFA3CB0F1642653F005F97D4 /* TabBar */ = {
@@ -455,6 +513,21 @@
 				EF15C6DC16426AC800EE7EB6 /* ServiceTabBarIcon@2x.png in Resources */,
 				EF15C6DF16426AEB00EE7EB6 /* Localizable.strings in Resources */,
 				EF15C7251642807C00EE7EB6 /* TPEmployeeDetailsViewController.xib in Resources */,
+				EF15C80A1643161A00EE7EB6 /* 1.JPG in Resources */,
+				EF15C80B1643161A00EE7EB6 /* 10.JPG in Resources */,
+				EF15C80C1643161A00EE7EB6 /* 11.JPG in Resources */,
+				EF15C80D1643161A00EE7EB6 /* 12.JPG in Resources */,
+				EF15C80E1643161A00EE7EB6 /* 13.JPG in Resources */,
+				EF15C80F1643161A00EE7EB6 /* 14.JPG in Resources */,
+				EF15C8101643161A00EE7EB6 /* 15.JPG in Resources */,
+				EF15C8111643161A00EE7EB6 /* 2.JPG in Resources */,
+				EF15C8121643161A00EE7EB6 /* 3.JPG in Resources */,
+				EF15C8131643161A00EE7EB6 /* 4.JPG in Resources */,
+				EF15C8141643161A00EE7EB6 /* 5.JPG in Resources */,
+				EF15C8151643161A00EE7EB6 /* 6.JPG in Resources */,
+				EF15C8161643161A00EE7EB6 /* 7.JPG in Resources */,
+				EF15C8171643161A00EE7EB6 /* 8.JPG in Resources */,
+				EF15C8181643161A00EE7EB6 /* 9.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +588,7 @@
 				EF15C7241642807C00EE7EB6 /* TPEmployeeDetailsViewController.m in Sources */,
 				EF15C7C61642A23A00EE7EB6 /* TPCoreDataManager.m in Sources */,
 				D6185992D3A8FEBE76F9173B /* TPDateHelper.m in Sources */,
+				D61853F96A0A2A9589BC8EC5 /* TPBasePhotoBrowserController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
