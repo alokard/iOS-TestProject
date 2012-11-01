@@ -5,7 +5,7 @@
 #import "TPEmployee.h"
 
 extern const struct TPAccountantAttributes {
-	__unsafe_unretained NSString *accountingType;
+	__unsafe_unretained NSString *accountingTypeNumber;
 } TPAccountantAttributes;
 
 extern const struct TPAccountantRelationships {
@@ -29,14 +29,14 @@ extern const struct TPAccountantFetchedProperties {
 
 
 
-@property (nonatomic, strong) NSNumber* accountingType;
+@property (nonatomic, strong) NSNumber* accountingTypeNumber;
 
 
-@property int16_t accountingTypeValue;
-- (int16_t)accountingTypeValue;
-- (void)setAccountingTypeValue:(int16_t)value_;
+@property int16_t accountingTypeNumberValue;
+- (int16_t)accountingTypeNumberValue;
+- (void)setAccountingTypeNumberValue:(int16_t)value_;
 
-//- (BOOL)validateAccountingType:(id*)value_ error:(NSError**)error_;
+//- (BOOL)validateAccountingTypeNumber:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -52,11 +52,11 @@ extern const struct TPAccountantFetchedProperties {
 @interface _TPAccountant (CoreDataGeneratedPrimitiveAccessors)
 
 
-- (NSNumber*)primitiveAccountingType;
-- (void)setPrimitiveAccountingType:(NSNumber*)value;
+- (NSNumber*)primitiveAccountingTypeNumber;
+- (void)setPrimitiveAccountingTypeNumber:(NSNumber*)value;
 
-- (int16_t)primitiveAccountingTypeValue;
-- (void)setPrimitiveAccountingTypeValue:(int16_t)value_;
+- (int16_t)primitiveAccountingTypeNumberValue;
+- (void)setPrimitiveAccountingTypeNumberValue:(int16_t)value_;
 
 
 

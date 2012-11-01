@@ -8,7 +8,7 @@ extern const struct TPDirectorAttributes {
 } TPDirectorAttributes;
 
 extern const struct TPDirectorRelationships {
-	__unsafe_unretained NSString *availableTimes;
+	__unsafe_unretained NSString *availableTime;
 } TPDirectorRelationships;
 
 extern const struct TPDirectorFetchedProperties {
@@ -30,9 +30,9 @@ extern const struct TPDirectorFetchedProperties {
 
 
 
-@property (nonatomic, strong) NSSet* availableTimes;
+@property (nonatomic, strong) TPTime* availableTime;
 
-- (NSMutableSet*)availableTimesSet;
+//- (BOOL)validateAvailableTime:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -42,19 +42,14 @@ extern const struct TPDirectorFetchedProperties {
 
 @interface _TPDirector (CoreDataGeneratedAccessors)
 
-- (void)addAvailableTimes:(NSSet*)value_;
-- (void)removeAvailableTimes:(NSSet*)value_;
-- (void)addAvailableTimesObject:(TPTime*)value_;
-- (void)removeAvailableTimesObject:(TPTime*)value_;
-
 @end
 
 @interface _TPDirector (CoreDataGeneratedPrimitiveAccessors)
 
 
 
-- (NSMutableSet*)primitiveAvailableTimes;
-- (void)setPrimitiveAvailableTimes:(NSMutableSet*)value;
+- (TPTime*)primitiveAvailableTime;
+- (void)setPrimitiveAvailableTime:(TPTime*)value;
 
 
 @end

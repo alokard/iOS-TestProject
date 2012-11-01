@@ -6,9 +6,11 @@
 //  Copyright (c) 2012 Tulusha.com. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+
 #import "TPBaseViewController.h"
 
-@interface TPListViewController : TPBaseViewController
+@interface TPListViewController : TPBaseViewController <UITableViewDataSource, UITableViewDelegate> {
+    IBOutlet UITableView *_tableView;
+}
 
 @end

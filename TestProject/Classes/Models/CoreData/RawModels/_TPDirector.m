@@ -7,7 +7,7 @@ const struct TPDirectorAttributes TPDirectorAttributes = {
 };
 
 const struct TPDirectorRelationships TPDirectorRelationships = {
-	.availableTimes = @"availableTimes",
+	.availableTime = @"availableTime",
 };
 
 const struct TPDirectorFetchedProperties TPDirectorFetchedProperties = {
@@ -46,17 +46,8 @@ const struct TPDirectorFetchedProperties TPDirectorFetchedProperties = {
 
 
 
-@dynamic availableTimes;
+@dynamic availableTime;
 
-	
-- (NSMutableSet*)availableTimesSet {
-	[self willAccessValueForKey:@"availableTimes"];
-  
-	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"availableTimes"];
-  
-	[self didAccessValueForKey:@"availableTimes"];
-	return result;
-}
 	
 
 

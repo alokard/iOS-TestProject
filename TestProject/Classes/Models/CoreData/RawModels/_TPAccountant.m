@@ -4,7 +4,7 @@
 #import "_TPAccountant.h"
 
 const struct TPAccountantAttributes TPAccountantAttributes = {
-	.accountingType = @"accountingType",
+	.accountingTypeNumber = @"accountingTypeNumber",
 };
 
 const struct TPAccountantRelationships TPAccountantRelationships = {
@@ -39,8 +39,8 @@ const struct TPAccountantFetchedProperties TPAccountantFetchedProperties = {
 + (NSSet *)keyPathsForValuesAffectingValueForKey:(NSString *)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
 	
-	if ([key isEqualToString:@"accountingTypeValue"]) {
-		NSSet *affectingKey = [NSSet setWithObject:@"accountingType"];
+	if ([key isEqualToString:@"accountingTypeNumberValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"accountingTypeNumber"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
 	}
 
@@ -50,26 +50,26 @@ const struct TPAccountantFetchedProperties TPAccountantFetchedProperties = {
 
 
 
-@dynamic accountingType;
+@dynamic accountingTypeNumber;
 
 
 
-- (int16_t)accountingTypeValue {
-	NSNumber *result = [self accountingType];
+- (int16_t)accountingTypeNumberValue {
+	NSNumber *result = [self accountingTypeNumber];
 	return [result shortValue];
 }
 
-- (void)setAccountingTypeValue:(int16_t)value_ {
-	[self setAccountingType:[NSNumber numberWithShort:value_]];
+- (void)setAccountingTypeNumberValue:(int16_t)value_ {
+	[self setAccountingTypeNumber:[NSNumber numberWithShort:value_]];
 }
 
-- (int16_t)primitiveAccountingTypeValue {
-	NSNumber *result = [self primitiveAccountingType];
+- (int16_t)primitiveAccountingTypeNumberValue {
+	NSNumber *result = [self primitiveAccountingTypeNumber];
 	return [result shortValue];
 }
 
-- (void)setPrimitiveAccountingTypeValue:(int16_t)value_ {
-	[self setPrimitiveAccountingType:[NSNumber numberWithShort:value_]];
+- (void)setPrimitiveAccountingTypeNumberValue:(int16_t)value_ {
+	[self setPrimitiveAccountingTypeNumber:[NSNumber numberWithShort:value_]];
 }
 
 

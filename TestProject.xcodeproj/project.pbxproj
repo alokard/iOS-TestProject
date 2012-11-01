@@ -50,6 +50,10 @@
 		EF15C7171642754500EE7EB6 /* TPDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C7101642754500EE7EB6 /* TPDirector.m */; };
 		EF15C7181642754500EE7EB6 /* TPEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C7121642754500EE7EB6 /* TPEmployee.m */; };
 		EF15C7191642754500EE7EB6 /* TPTime.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C7141642754500EE7EB6 /* TPTime.m */; };
+		EF15C7201642788500EE7EB6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF15C71F1642788500EE7EB6 /* CoreData.framework */; };
+		EF15C7241642807C00EE7EB6 /* TPEmployeeDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C7221642807C00EE7EB6 /* TPEmployeeDetailsViewController.m */; };
+		EF15C7251642807C00EE7EB6 /* TPEmployeeDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF15C7231642807C00EE7EB6 /* TPEmployeeDetailsViewController.xib */; };
+		EF15C7C61642A23A00EE7EB6 /* TPCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C7C51642A23A00EE7EB6 /* TPCoreDataManager.m */; };
 		EFA3CB171642653F005F97D4 /* ListTabBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA3CB101642653F005F97D4 /* ListTabBarIcon.png */; };
 		EFA3CB181642653F005F97D4 /* ListTabBarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA3CB111642653F005F97D4 /* ListTabBarIcon@2x.png */; };
 		EFA3CB191642653F005F97D4 /* GalleryTabBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA3CB121642653F005F97D4 /* GalleryTabBarIcon.png */; };
@@ -110,6 +114,12 @@
 		EF15C7121642754500EE7EB6 /* TPEmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPEmployee.m; sourceTree = "<group>"; };
 		EF15C7131642754500EE7EB6 /* TPTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPTime.h; sourceTree = "<group>"; };
 		EF15C7141642754500EE7EB6 /* TPTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPTime.m; sourceTree = "<group>"; };
+		EF15C71F1642788500EE7EB6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EF15C7211642807C00EE7EB6 /* TPEmployeeDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPEmployeeDetailsViewController.h; sourceTree = "<group>"; };
+		EF15C7221642807C00EE7EB6 /* TPEmployeeDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPEmployeeDetailsViewController.m; sourceTree = "<group>"; };
+		EF15C7231642807C00EE7EB6 /* TPEmployeeDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPEmployeeDetailsViewController.xib; sourceTree = "<group>"; };
+		EF15C7C41642A23A00EE7EB6 /* TPCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPCoreDataManager.h; sourceTree = "<group>"; };
+		EF15C7C51642A23A00EE7EB6 /* TPCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPCoreDataManager.m; sourceTree = "<group>"; };
 		EFA3CB101642653F005F97D4 /* ListTabBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ListTabBarIcon.png; sourceTree = "<group>"; };
 		EFA3CB111642653F005F97D4 /* ListTabBarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListTabBarIcon@2x.png"; sourceTree = "<group>"; };
 		EFA3CB121642653F005F97D4 /* GalleryTabBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GalleryTabBarIcon.png; sourceTree = "<group>"; };
@@ -123,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF15C7201642788500EE7EB6 /* CoreData.framework in Frameworks */,
 				EF01FE1E1641156200C0500B /* UIKit.framework in Frameworks */,
 				EF01FE201641156200C0500B /* Foundation.framework in Frameworks */,
 				EF01FE221641156200C0500B /* CoreGraphics.framework in Frameworks */,
@@ -154,6 +165,7 @@
 		EF01FE1C1641156200C0500B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF15C71F1642788500EE7EB6 /* CoreData.framework */,
 				EF01FE1D1641156200C0500B /* UIKit.framework */,
 				EF01FE1F1641156200C0500B /* Foundation.framework */,
 				EF01FE211641156200C0500B /* CoreGraphics.framework */,
@@ -208,6 +220,7 @@
 		EF01FE6F1641171900C0500B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EF15C7C31642A14200EE7EB6 /* Managers */,
 				EF01FE701641171900C0500B /* Controllers */,
 				EF01FE771641171900C0500B /* Models */,
 				EF01FE781641171900C0500B /* Networking */,
@@ -276,6 +289,9 @@
 				EF15C6AF164268A400EE7EB6 /* TPListViewController.h */,
 				EF15C6B0164268A400EE7EB6 /* TPListViewController.m */,
 				EF15C6B1164268A400EE7EB6 /* TPListViewController.xib */,
+				EF15C7211642807C00EE7EB6 /* TPEmployeeDetailsViewController.h */,
+				EF15C7221642807C00EE7EB6 /* TPEmployeeDetailsViewController.m */,
+				EF15C7231642807C00EE7EB6 /* TPEmployeeDetailsViewController.xib */,
 			);
 			path = "List View Controller";
 			sourceTree = "<group>";
@@ -323,6 +339,15 @@
 				EF15C7041642753700EE7EB6 /* _TPTime.m */,
 			);
 			path = RawModels;
+			sourceTree = "<group>";
+		};
+		EF15C7C31642A14200EE7EB6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EF15C7C41642A23A00EE7EB6 /* TPCoreDataManager.h */,
+				EF15C7C51642A23A00EE7EB6 /* TPCoreDataManager.m */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		EFA3CB0F1642653F005F97D4 /* TabBar */ = {
@@ -416,6 +441,7 @@
 				EF15C6DB16426AC800EE7EB6 /* ServiceTabBarIcon.png in Resources */,
 				EF15C6DC16426AC800EE7EB6 /* ServiceTabBarIcon@2x.png in Resources */,
 				EF15C6DF16426AEB00EE7EB6 /* Localizable.strings in Resources */,
+				EF15C7251642807C00EE7EB6 /* TPEmployeeDetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +499,8 @@
 				EF15C7171642754500EE7EB6 /* TPDirector.m in Sources */,
 				EF15C7181642754500EE7EB6 /* TPEmployee.m in Sources */,
 				EF15C7191642754500EE7EB6 /* TPTime.m in Sources */,
+				EF15C7241642807C00EE7EB6 /* TPEmployeeDetailsViewController.m in Sources */,
+				EF15C7C61642A23A00EE7EB6 /* TPCoreDataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +633,7 @@
 				EF15C6EE1642722300EE7EB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
