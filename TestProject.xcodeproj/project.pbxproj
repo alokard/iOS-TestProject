@@ -71,6 +71,7 @@
 		EF15C8161643161A00EE7EB6 /* 7.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF15C8071643161A00EE7EB6 /* 7.JPG */; };
 		EF15C8171643161A00EE7EB6 /* 8.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF15C8081643161A00EE7EB6 /* 8.JPG */; };
 		EF15C8181643161A00EE7EB6 /* 9.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF15C8091643161A00EE7EB6 /* 9.JPG */; };
+		EF15C8441643392200EE7EB6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF15C8431643392200EE7EB6 /* Default-568h@2x.png */; };
 		EFA3CB171642653F005F97D4 /* ListTabBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA3CB101642653F005F97D4 /* ListTabBarIcon.png */; };
 		EFA3CB181642653F005F97D4 /* ListTabBarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA3CB111642653F005F97D4 /* ListTabBarIcon@2x.png */; };
 		EFA3CB191642653F005F97D4 /* GalleryTabBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA3CB121642653F005F97D4 /* GalleryTabBarIcon.png */; };
@@ -156,6 +157,7 @@
 		EF15C8071643161A00EE7EB6 /* 7.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.JPG; sourceTree = "<group>"; };
 		EF15C8081643161A00EE7EB6 /* 8.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.JPG; sourceTree = "<group>"; };
 		EF15C8091643161A00EE7EB6 /* 9.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.JPG; sourceTree = "<group>"; };
+		EF15C8431643392200EE7EB6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EFA3CB101642653F005F97D4 /* ListTabBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ListTabBarIcon.png; sourceTree = "<group>"; };
 		EFA3CB111642653F005F97D4 /* ListTabBarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListTabBarIcon@2x.png"; sourceTree = "<group>"; };
 		EFA3CB121642653F005F97D4 /* GalleryTabBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GalleryTabBarIcon.png; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				EFA3CB141642653F005F97D4 /* Icon */,
 				EF01FE63164116EC00C0500B /* Default.png */,
 				EF01FE64164116EC00C0500B /* Default@2x.png */,
+				EF15C8431643392200EE7EB6 /* Default-568h@2x.png */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
@@ -528,6 +531,7 @@
 				EF15C8161643161A00EE7EB6 /* 7.JPG in Resources */,
 				EF15C8171643161A00EE7EB6 /* 8.JPG in Resources */,
 				EF15C8181643161A00EE7EB6 /* 9.JPG in Resources */,
+				EF15C8441643392200EE7EB6 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,6 +31,7 @@
 
     UIViewController *galleryViewController = [[TPGalleryViewController alloc] initWithNibName:@"TPGalleryViewController" bundle:nil];
     UINavigationController *galleryNavigationController = [[UINavigationController alloc] initWithRootViewController:galleryViewController];
+    galleryNavigationController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
     [galleryViewController release];
 
     UIViewController *serviceViewController = [[TPServiceViewController alloc] initWithNibName:@"TPServiceViewController" bundle:nil];
