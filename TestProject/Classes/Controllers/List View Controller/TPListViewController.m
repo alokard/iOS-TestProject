@@ -152,7 +152,12 @@
 
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
 {
+    TPBaseEmployeeModel *fromModel = [[self.employeesArrays objectAtIndex:fromIndexPath.section] objectAtIndex:fromIndexPath.row];
+    TPBaseEmployeeModel *toModel = [[self.employeesArrays objectAtIndex:toIndexPath.section] objectAtIndex:toIndexPath.row];
 
+    toModel.order = [NSNumber numberWithInteger:fromIndexPath.row + 1];
+    fromModel.order = [NSNumber numberWithInteger:toIndexPath.row + 1];
+    [[TPCoreDataManager sharedInstance] saveContext];
 }
 
 - (NSIndexPath *)tableView:(UITableView *)tableView targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath toProposedIndexPath:(NSIndexPath *)proposedDestinationIndexPath

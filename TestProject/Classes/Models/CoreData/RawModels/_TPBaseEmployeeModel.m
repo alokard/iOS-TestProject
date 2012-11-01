@@ -4,6 +4,7 @@
 #import "_TPBaseEmployeeModel.h"
 
 const struct TPBaseEmployeeModelAttributes TPBaseEmployeeModelAttributes = {
+	.creationDate = @"creationDate",
 	.name = @"name",
 	.order = @"order",
 	.salary = @"salary",
@@ -52,6 +53,13 @@ const struct TPBaseEmployeeModelFetchedProperties TPBaseEmployeeModelFetchedProp
 
 	return keyPaths;
 }
+
+
+
+
+@dynamic creationDate;
+
+
 
 
 

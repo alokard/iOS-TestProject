@@ -22,6 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		D61854C68999F717C7094FF6 /* TPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6185FC4C957C42A1BFCCED0 /* TPBaseViewController.m */; };
+		D6185992D3A8FEBE76F9173B /* TPDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D6185831326C3DE0CFE6B08C /* TPDateHelper.m */; };
 		EF01FE1E1641156200C0500B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF01FE1D1641156200C0500B /* UIKit.framework */; };
 		EF01FE201641156200C0500B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF01FE1F1641156200C0500B /* Foundation.framework */; };
 		EF01FE221641156200C0500B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF01FE211641156200C0500B /* CoreGraphics.framework */; };
@@ -66,7 +67,9 @@
 /* Begin PBXFileReference section */
 		47C29405805647C39BFE530B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B31DCC333F942499B8F97E8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		D618510A393B0166CC63FB09 /* TPDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPDateHelper.h; sourceTree = "<group>"; };
 		D6185373F1C3A739454B444E /* TPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPBaseViewController.h; sourceTree = "<group>"; };
+		D6185831326C3DE0CFE6B08C /* TPDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPDateHelper.m; sourceTree = "<group>"; };
 		D6185FC4C957C42A1BFCCED0 /* TPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPBaseViewController.m; sourceTree = "<group>"; };
 		EF01FE191641156200C0500B /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF01FE1D1641156200C0500B /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -144,6 +147,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D6185FD35DDA9464AD0914EF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D618510A393B0166CC63FB09 /* TPDateHelper.h */,
+				D6185831326C3DE0CFE6B08C /* TPDateHelper.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		EF01FE0E1641156200C0500B = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +237,7 @@
 				EF01FE771641171900C0500B /* Models */,
 				EF01FE781641171900C0500B /* Networking */,
 				EF01FE791641171900C0500B /* Views */,
+				D6185FD35DDA9464AD0914EF /* Helpers */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -501,6 +514,7 @@
 				EF15C7191642754500EE7EB6 /* TPTime.m in Sources */,
 				EF15C7241642807C00EE7EB6 /* TPEmployeeDetailsViewController.m in Sources */,
 				EF15C7C61642A23A00EE7EB6 /* TPCoreDataManager.m in Sources */,
+				D6185992D3A8FEBE76F9173B /* TPDateHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

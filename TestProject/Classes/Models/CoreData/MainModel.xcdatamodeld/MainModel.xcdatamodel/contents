@@ -4,16 +4,17 @@
         <attribute name="accountingTypeNumber" attributeType="Integer 16" defaultValueString="-1" syncable="YES"/>
     </entity>
     <entity name="TPBaseEmployeeModel" representedClassName="TPBaseEmployeeModel" syncable="YES">
+        <attribute name="creationDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
         <attribute name="order" attributeType="Integer 64" defaultValueString="0" indexed="YES" syncable="YES"/>
         <attribute name="salary" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
     </entity>
     <entity name="TPDirector" representedClassName="TPDirector" parentEntity="TPBaseEmployeeModel" syncable="YES">
-        <relationship name="availableTime" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TPTime" syncable="YES"/>
+        <relationship name="availableTime" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="TPTime" syncable="YES"/>
     </entity>
     <entity name="TPEmployee" representedClassName="TPEmployee" parentEntity="TPBaseEmployeeModel" syncable="YES">
         <attribute name="workingPlaceNumber" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="dinnerTime" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TPTime" syncable="YES"/>
+        <relationship name="dinnerTime" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="TPTime" syncable="YES"/>
     </entity>
     <entity name="TPTime" representedClassName="TPTime" syncable="YES">
         <attribute name="endTime" optional="YES" attributeType="Date" syncable="YES"/>
@@ -21,7 +22,7 @@
     </entity>
     <elements>
         <element name="TPAccountant" positionX="-3035" positionY="-247" width="128" height="58"/>
-        <element name="TPBaseEmployeeModel" positionX="-3393" positionY="-108" width="128" height="88"/>
+        <element name="TPBaseEmployeeModel" positionX="-3402" positionY="-126" width="128" height="103"/>
         <element name="TPDirector" positionX="-3233" positionY="-16" width="128" height="58"/>
         <element name="TPEmployee" positionX="-3215" positionY="-189" width="128" height="73"/>
         <element name="TPTime" positionX="-3017" positionY="-46" width="128" height="73"/>

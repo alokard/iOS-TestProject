@@ -12,5 +12,4 @@ typedef enum {
 
 + (NSMutableArray *)allObjects;
 
-// Custom logic goes here.
 @end

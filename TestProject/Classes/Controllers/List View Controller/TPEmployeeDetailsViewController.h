@@ -23,7 +23,6 @@
     IBOutlet UISegmentedControl *_accountantTypeControl;
 }
 
-
 - (id)initWithModel:(id)aModel;
 
 

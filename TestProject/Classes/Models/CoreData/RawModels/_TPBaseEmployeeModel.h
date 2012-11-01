@@ -5,6 +5,7 @@
 
 
 extern const struct TPBaseEmployeeModelAttributes {
+	__unsafe_unretained NSString *creationDate;
 	__unsafe_unretained NSString *name;
 	__unsafe_unretained NSString *order;
 	__unsafe_unretained NSString *salary;
@@ -21,6 +22,7 @@ extern const struct TPBaseEmployeeModelFetchedProperties {
 
 
 
+
 @interface TPBaseEmployeeModelID : NSManagedObjectID {}
 @end
 
@@ -29,6 +31,14 @@ extern const struct TPBaseEmployeeModelFetchedProperties {
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
 - (TPBaseEmployeeModelID*)objectID;
+
+
+
+
+@property (nonatomic, strong) NSDate* creationDate;
+
+
+//- (BOOL)validateCreationDate:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -74,6 +84,12 @@ extern const struct TPBaseEmployeeModelFetchedProperties {
 @end
 
 @interface _TPBaseEmployeeModel (CoreDataGeneratedPrimitiveAccessors)
+
+
+- (NSDate*)primitiveCreationDate;
+- (void)setPrimitiveCreationDate:(NSDate*)value;
+
+
 
 
 - (NSString*)primitiveName;

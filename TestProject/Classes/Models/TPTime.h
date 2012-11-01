@@ -2,4 +2,7 @@
 
 @interface TPTime : _TPTime {}
 // Custom logic goes here.
+
++ (TPTime *)createTime;
+
 @end
