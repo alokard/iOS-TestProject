@@ -20,9 +20,6 @@
 
 @interface TPBasePhotoBrowserController : UIViewController <UIScrollViewDelegate, UIActionSheetDelegate, MFMailComposeViewControllerDelegate>
 
-// Properties
-@property (nonatomic) BOOL displayActionButton;
-
 - (id)initWithDelegate:(id <TPBasePhotoBrowserDelegate>)delegate;
 
 - (void)reloadData;

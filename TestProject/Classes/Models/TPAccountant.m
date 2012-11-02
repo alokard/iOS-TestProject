@@ -1,5 +1,5 @@
+
 #import "TPAccountant.h"
-#import "TPCoreDataManager.h"
 
 @implementation TPAccountant
 

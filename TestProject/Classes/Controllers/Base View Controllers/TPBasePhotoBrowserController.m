@@ -44,14 +44,6 @@
 
     MBProgressHUD *_progressHUD;
 
-    // Appearance
-    UIImage *_navigationBarBackgroundImageDefault,
-            *_navigationBarBackgroundImageLandscapePhone;
-    UIColor *_previousNavBarTintColor;
-    UIBarStyle _previousNavBarStyle;
-    UIStatusBarStyle _previousStatusBarStyle;
-    UIBarButtonItem *_previousViewControllerBackButton;
-
     // Misc
     BOOL _displayActionButton;
     BOOL _performingLayout;
@@ -97,7 +89,7 @@
 - (NSUInteger)numberOfPhotos;
 - (id<MWPhoto>)photoAtIndex:(NSUInteger)index;
 - (UIImage *)imageForPhoto:(id<MWPhoto>)photo;
-- (void)loadAdjacentPhotosIfNecessary:(id<MWPhoto>)photo;
+- (void)loadAdjacentPhotosIfNecessary:(id<MWPhoto>)aPhoto;
 - (void)releaseAllUnderlyingPhotos;
 
 @end
@@ -146,10 +138,6 @@
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-    [_previousNavBarTintColor release];
-    [_navigationBarBackgroundImageDefault release];
-    [_navigationBarBackgroundImageLandscapePhone release];
-    [_previousViewControllerBackButton release];
     [_pagingScrollView release];
     [_visiblePages release];
     [_recycledPages release];
@@ -403,8 +391,8 @@
     return nil;
 }
 
-- (void)loadAdjacentPhotosIfNecessary:(id<MWPhoto>)photo {
-    MWZoomingScrollView *page = [self pageDisplayingPhoto:photo];
+- (void)loadAdjacentPhotosIfNecessary:(id<MWPhoto>)aPhoto {
+    MWZoomingScrollView *page = [self pageDisplayingPhoto:aPhoto];
     if (page) {
         // If page is current page then initiate loading of previous and next pages
         NSUInteger pageIndex = PAGE_INDEX(page);
