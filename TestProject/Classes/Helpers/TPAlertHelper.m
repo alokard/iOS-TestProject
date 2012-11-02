@@ -16,11 +16,11 @@
 }
 
 + (void)showSuccessAlertWithText:(NSString *)message {
-    [SVProgressHUD showSuccessWithStatus:message duration:2.0];
+    [SVProgressHUD showSuccessWithStatus:message duration:3.0];
 }
 
 + (void)showErrorAlertWithText:(NSString *)message {
-    [SVProgressHUD showErrorWithStatus:message duration:4.0];
+    [SVProgressHUD showErrorWithStatus:message duration:5.0];
 }
 
 + (void)dismiss {

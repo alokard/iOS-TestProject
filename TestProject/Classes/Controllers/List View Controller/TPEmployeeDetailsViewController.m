@@ -12,6 +12,7 @@
 #import "TPTime.h"
 #import "TPCoreDataManager.h"
 #import "TPDateHelper.h"
+#import "TPAlertHelper.h"
 
 #define kActionSheetTitleFrame CGRectMake(10, 7, 300, 30)
 #define kActionSheetNextButtonFrame CGRectMake(260, 7, 50, 30)
@@ -242,6 +243,10 @@ static NSTimeInterval const kOneHour = 3600;
 
 - (void)saveTapped:(UIBarButtonItem *)aSender {
 
+    if (![self validateFields]) {
+        [TPAlertHelper showErrorAlertWithText:NSLocalizedString(@"Please fill all fields", @"Please fill all fields")];
+        return;
+    }
     TPBaseEmployeeModel *newModel = nil;
 
     switch (_selectedEmployeeType) {
@@ -278,6 +283,26 @@ static NSTimeInterval const kOneHour = 3600;
 
     [[TPCoreDataManager sharedInstance] saveContext];
     [self.navigationController dismissModalViewControllerAnimated:YES];
+}
+
+- (BOOL)validateFields {
+    BOOL result = YES;
+    if ([_nameTextField.text isEqualToString:@""]
+        || [_salaryTextField.text isEqualToString:@""]) {
+        result = NO;
+    }
+    if (_selectedEmployeeType == TPEmployeeTypeDirector) {
+        if ([_availableTimeTextField.text isEqualToString:@""]) {
+            result = NO;
+        }
+    }
+    else {
+        if ([_dinnerTimeTextField.text isEqualToString:@""]
+            || [_workplaceNumberTextField.text isEqualToString:@""]) {
+            result = NO;
+        }
+    }
+    return result;
 }
 
 #pragma mark - TextField delegate
