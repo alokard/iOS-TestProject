@@ -16,7 +16,8 @@
 @property(nonatomic, readonly) id date;
 
 - (id)initWithDictionary:(NSDictionary *)aDictionary;
-- (CGFloat)textHeight;
+
+- (CGFloat)textHeightForWidth:(CGFloat)aWidth;
 
 + (void)loadServiceItemsWithBlock:(void (^)(NSArray *posts, NSError *error))block;
 

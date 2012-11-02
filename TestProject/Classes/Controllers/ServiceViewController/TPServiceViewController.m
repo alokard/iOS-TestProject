@@ -129,7 +129,7 @@
     cell.dateLabel.text = model.date;
 
     CGRect frame = cell.itemTextLabel.frame;
-    frame.size.height = [model textHeight];
+    frame.size.height = [model textHeightForWidth:(tableView.frame.size.width - 20)];
     cell.itemTextLabel.frame = frame;
     cell.itemTextLabel.text = model.text;
 
@@ -138,7 +138,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     TPServiceItem *model = [self.items objectAtIndex:indexPath.row];
-    return [model textHeight];
+    return [model textHeightForWidth:(tableView.frame.size.width - 20)];
 }
 
 

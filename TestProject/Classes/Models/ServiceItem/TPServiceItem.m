@@ -85,9 +85,9 @@
 
 #pragma mark - Helper methods
 
-- (CGFloat)textHeight {
+- (CGFloat)textHeightForWidth:(CGFloat)aWidth {
     UIFont *font = [UIFont fontWithName:@"Avenir-Medium" size:17];
-    CGSize size = CGSizeMake(280, MAXFLOAT);
+    CGSize size = CGSizeMake(aWidth, MAXFLOAT);
     size = [_text sizeWithFont:font constrainedToSize:size lineBreakMode:UILineBreakModeWordWrap];
 
     return size.height;
