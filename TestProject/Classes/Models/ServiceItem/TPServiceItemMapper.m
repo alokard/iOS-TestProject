@@ -25,9 +25,10 @@
 
 - (void)parser:(NSXMLParser *)parser foundCDATA:(NSData *)CDATABlock {
     if (_itemText) {
-        NSString *cdataString = [[[NSString alloc] initWithData:CDATABlock
-                                                       encoding:NSUTF8StringEncoding] autorelease];
+        NSString *cdataString = [[NSString alloc] initWithData:CDATABlock
+                                                      encoding:NSUTF8StringEncoding];
         [_itemText appendString:cdataString];
+        [cdataString release];
     }
 }
 
@@ -58,6 +59,7 @@
     }
     else if (_itemText) {
         [_currentDictionary setObject:_itemText forKey:elementName];
+        [_itemText release], _itemText = nil;
     }
 }
 

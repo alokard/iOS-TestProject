@@ -11,6 +11,7 @@
 #import "TPServiceItem.h"
 #import "TPServiceItemTableViewCell.h"
 #import "TPAlertHelper.h"
+#import "Reachability.h"
 
 @interface TPServiceViewController ()
 
@@ -68,7 +69,6 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [_tableView scrollRectToVisible:CGRectMake(0, -50, _tableView.frame.size.width, 44) animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -80,25 +80,29 @@
 #pragma mark - Loading methods
 
 - (void)reloadNetworkData {
-    __block TPServiceViewController *weakSelf = self;
-    if (![self.refreshControl refreshing]) {
-        [TPAlertHelper showActivityIndicator];
+    if (![[Reachability reachabilityForInternetConnection] isReachable]) {
+        [TPAlertHelper showErrorAlertWithText:NSLocalizedString(@"Sorry, You don't have internet connection. Try again later", @"Sorry, You don't have internet connection. Try again later")];
+        [self doneLoadingTableViewData];
     }
-    [TPServiceItem loadServiceItemsWithBlock:^(NSArray *items, NSError *error) {
-        [TPAlertHelper dismiss];
+    else {
+        __block TPServiceViewController *weakSelf = self;
+        if (![self.refreshControl refreshing]) {
+            [TPAlertHelper showActivityIndicator];
+        }
+        [TPServiceItem loadServiceItemsWithBlock:^(NSArray *items, NSError *error) {
+            [TPAlertHelper dismiss];
 
-        weakSelf.items = items;
-        [weakSelf.tableView reloadData];
-        [weakSelf doneLoadingTableViewData];
-    }];
-
+            weakSelf.items = items;
+            [weakSelf.tableView reloadData];
+            [weakSelf doneLoadingTableViewData];
+        }];
+    }
 }
 
 #pragma mark - ODRefreshControl Methods
 
 - (void)dropViewDidBeginRefreshing:(ODRefreshControl *)refreshControl
 {
-    [refreshControl beginRefreshing];
     [self reloadNetworkData];
 }
 
@@ -138,7 +142,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     TPServiceItem *model = [self.items objectAtIndex:indexPath.row];
-    return [model textHeightForWidth:(tableView.frame.size.width - 20)];
+    return [model textHeightForWidth:(tableView.frame.size.width - 20)] + 40;
 }
 
 
