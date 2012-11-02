@@ -216,7 +216,7 @@ static NSTimeInterval const kOneHour = 3600;
     else {
         self.toTime = [picker date];
 
-        if ([self.model isKindOfClass:[TPDirector class]]) {
+        if (_selectedEmployeeType == TPEmployeeTypeDirector) {
             _availableTimeTextField.text = [TPDateHelper stringIntervalFromTime:self.fromTime
                                                                          toTime:self.toTime];
         }

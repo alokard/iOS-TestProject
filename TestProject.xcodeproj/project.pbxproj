@@ -21,8 +21,11 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		D618518DFCE2EDF42A2E030E /* TPServiceItemMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D6185D2CA62226B25A262EEB /* TPServiceItemMapper.m */; };
+		D61851F7BCD2C214EAB4A933 /* TPServiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D61855007FAB8418A4BA8493 /* TPServiceItem.m */; };
 		D61853F96A0A2A9589BC8EC5 /* TPBasePhotoBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6185124271FB7E703108D18 /* TPBasePhotoBrowserController.m */; };
 		D61854C68999F717C7094FF6 /* TPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6185FC4C957C42A1BFCCED0 /* TPBaseViewController.m */; };
+		D618589250D331028CD6F6D4 /* TPServiceAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D6185DEC6BE58E84660C9939 /* TPServiceAPIClient.m */; };
 		D6185992D3A8FEBE76F9173B /* TPDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D6185831326C3DE0CFE6B08C /* TPDateHelper.m */; };
 		EF01FE1E1641156200C0500B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF01FE1D1641156200C0500B /* UIKit.framework */; };
 		EF01FE201641156200C0500B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF01FE1F1641156200C0500B /* Foundation.framework */; };
@@ -72,6 +75,9 @@
 		EF15C8171643161A00EE7EB6 /* 8.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF15C8081643161A00EE7EB6 /* 8.JPG */; };
 		EF15C8181643161A00EE7EB6 /* 9.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF15C8091643161A00EE7EB6 /* 9.JPG */; };
 		EF15C8441643392200EE7EB6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF15C8431643392200EE7EB6 /* Default-568h@2x.png */; };
+		EF15C87E16435D5F00EE7EB6 /* TPServiceItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C87D16435D5F00EE7EB6 /* TPServiceItemTableViewCell.m */; };
+		EF15C88116435D7700EE7EB6 /* TPServiceItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF15C88016435D7700EE7EB6 /* TPServiceItemTableViewCell.xib */; };
+		EF15C8881643753F00EE7EB6 /* TPAlertHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EF15C8871643753F00EE7EB6 /* TPAlertHelper.m */; };
 		EFA3CB171642653F005F97D4 /* ListTabBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA3CB101642653F005F97D4 /* ListTabBarIcon.png */; };
 		EFA3CB181642653F005F97D4 /* ListTabBarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA3CB111642653F005F97D4 /* ListTabBarIcon@2x.png */; };
 		EFA3CB191642653F005F97D4 /* GalleryTabBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA3CB121642653F005F97D4 /* GalleryTabBarIcon.png */; };
@@ -86,8 +92,15 @@
 		5B31DCC333F942499B8F97E8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		D618510A393B0166CC63FB09 /* TPDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPDateHelper.h; sourceTree = "<group>"; };
 		D6185124271FB7E703108D18 /* TPBasePhotoBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPBasePhotoBrowserController.m; sourceTree = "<group>"; };
+		D6185149826B4396994142DE /* TPNetworkingDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPNetworkingDefines.h; sourceTree = "<group>"; };
 		D6185373F1C3A739454B444E /* TPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPBaseViewController.h; sourceTree = "<group>"; };
+		D618544BFB5C389E4D202307 /* TPServiceAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPServiceAPIClient.h; sourceTree = "<group>"; };
+		D61855007FAB8418A4BA8493 /* TPServiceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPServiceItem.m; sourceTree = "<group>"; };
 		D6185831326C3DE0CFE6B08C /* TPDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPDateHelper.m; sourceTree = "<group>"; };
+		D618586ABECA4DD5C4C410EF /* TPServiceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPServiceItem.h; sourceTree = "<group>"; };
+		D6185D2CA62226B25A262EEB /* TPServiceItemMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPServiceItemMapper.m; sourceTree = "<group>"; };
+		D6185D90FCE5CB1D6876449B /* TPServiceItemMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPServiceItemMapper.h; sourceTree = "<group>"; };
+		D6185DEC6BE58E84660C9939 /* TPServiceAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPServiceAPIClient.m; sourceTree = "<group>"; };
 		D6185F1619FC57934C3907A0 /* TPBasePhotoBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPBasePhotoBrowserController.h; sourceTree = "<group>"; };
 		D6185FC4C957C42A1BFCCED0 /* TPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPBaseViewController.m; sourceTree = "<group>"; };
 		EF01FE191641156200C0500B /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +171,11 @@
 		EF15C8081643161A00EE7EB6 /* 8.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.JPG; sourceTree = "<group>"; };
 		EF15C8091643161A00EE7EB6 /* 9.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.JPG; sourceTree = "<group>"; };
 		EF15C8431643392200EE7EB6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EF15C87C16435D5F00EE7EB6 /* TPServiceItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPServiceItemTableViewCell.h; sourceTree = "<group>"; };
+		EF15C87D16435D5F00EE7EB6 /* TPServiceItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPServiceItemTableViewCell.m; sourceTree = "<group>"; };
+		EF15C88016435D7700EE7EB6 /* TPServiceItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TPServiceItemTableViewCell.xib; sourceTree = "<group>"; };
+		EF15C8861643753F00EE7EB6 /* TPAlertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPAlertHelper.h; sourceTree = "<group>"; };
+		EF15C8871643753F00EE7EB6 /* TPAlertHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPAlertHelper.m; sourceTree = "<group>"; };
 		EFA3CB101642653F005F97D4 /* ListTabBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ListTabBarIcon.png; sourceTree = "<group>"; };
 		EFA3CB111642653F005F97D4 /* ListTabBarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ListTabBarIcon@2x.png"; sourceTree = "<group>"; };
 		EFA3CB121642653F005F97D4 /* GalleryTabBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GalleryTabBarIcon.png; sourceTree = "<group>"; };
@@ -182,9 +200,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D61854828BC18D08E9C1A90F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EF15C87C16435D5F00EE7EB6 /* TPServiceItemTableViewCell.h */,
+				EF15C87D16435D5F00EE7EB6 /* TPServiceItemTableViewCell.m */,
+				EF15C88016435D7700EE7EB6 /* TPServiceItemTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D6185D710BFB59E8C4EDB1C3 /* ServiceItem */ = {
+			isa = PBXGroup;
+			children = (
+				D618586ABECA4DD5C4C410EF /* TPServiceItem.h */,
+				D61855007FAB8418A4BA8493 /* TPServiceItem.m */,
+				D6185D90FCE5CB1D6876449B /* TPServiceItemMapper.h */,
+				D6185D2CA62226B25A262EEB /* TPServiceItemMapper.m */,
+			);
+			path = ServiceItem;
+			sourceTree = "<group>";
+		};
 		D6185FD35DDA9464AD0914EF /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				EF15C8861643753F00EE7EB6 /* TPAlertHelper.h */,
+				EF15C8871643753F00EE7EB6 /* TPAlertHelper.m */,
 				D618510A393B0166CC63FB09 /* TPDateHelper.h */,
 				D6185831326C3DE0CFE6B08C /* TPDateHelper.m */,
 			);
@@ -305,6 +346,7 @@
 				EF15C7131642754500EE7EB6 /* TPTime.h */,
 				EF15C7141642754500EE7EB6 /* TPTime.m */,
 				EF15C6E016426D8200EE7EB6 /* CoreData */,
+				D6185D710BFB59E8C4EDB1C3 /* ServiceItem */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -312,6 +354,9 @@
 		EF01FE781641171900C0500B /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				D618544BFB5C389E4D202307 /* TPServiceAPIClient.h */,
+				D6185DEC6BE58E84660C9939 /* TPServiceAPIClient.m */,
+				D6185149826B4396994142DE /* TPNetworkingDefines.h */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -319,6 +364,7 @@
 		EF01FE791641171900C0500B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D61854828BC18D08E9C1A90F /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -532,6 +578,7 @@
 				EF15C8171643161A00EE7EB6 /* 8.JPG in Resources */,
 				EF15C8181643161A00EE7EB6 /* 9.JPG in Resources */,
 				EF15C8441643392200EE7EB6 /* Default-568h@2x.png in Resources */,
+				EF15C88116435D7700EE7EB6 /* TPServiceItemTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +640,11 @@
 				EF15C7C61642A23A00EE7EB6 /* TPCoreDataManager.m in Sources */,
 				D6185992D3A8FEBE76F9173B /* TPDateHelper.m in Sources */,
 				D61853F96A0A2A9589BC8EC5 /* TPBasePhotoBrowserController.m in Sources */,
+				D61851F7BCD2C214EAB4A933 /* TPServiceItem.m in Sources */,
+				D618589250D331028CD6F6D4 /* TPServiceAPIClient.m in Sources */,
+				D618518DFCE2EDF42A2E030E /* TPServiceItemMapper.m in Sources */,
+				EF15C87E16435D5F00EE7EB6 /* TPServiceItemTableViewCell.m in Sources */,
+				EF15C8881643753F00EE7EB6 /* TPAlertHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

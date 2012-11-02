@@ -10,6 +10,13 @@
 
 #import "TPBaseViewController.h"
 
-@interface TPServiceViewController : TPBaseViewController
+@class ODRefreshControl;
+
+@interface TPServiceViewController : TPBaseViewController <UITableViewDataSource, UITableViewDelegate> {
+
+}
+
+@property(nonatomic, retain) IBOutlet UITableView *tableView;
+
 
 @end

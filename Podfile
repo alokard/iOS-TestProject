@@ -1,6 +1,6 @@
 platform :ios, "5.0"
 
-pod 'AFNetworking'
+pod 'AFNetworking', '0.10.1'
 pod 'SVProgressHUD'
 pod 'Reachability'
 pod 'MWPhotoBrowser'
