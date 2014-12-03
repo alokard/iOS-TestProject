@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1AADC298-BA8B-43AE-9EBF-8868B48EF032</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TestProject</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>00CE385DC854E093825E2E10E46F82C90D9DDA1E</key>
+		<string>github.com:alokard/iOS-TestProject.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TestProject.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>00CE385DC854E093825E2E10E46F82C90D9DDA1E</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:alokard/iOS-TestProject.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>00CE385DC854E093825E2E10E46F82C90D9DDA1E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>00CE385DC854E093825E2E10E46F82C90D9DDA1E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-TestProject</string>
+		</dict>
+	</array>
+</dict>
+</plist>

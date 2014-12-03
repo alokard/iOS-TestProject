@@ -4,7 +4,6 @@
 !*.xcodeproj/*.pbxproj
 !*.xcodeproj/xcshareddata/xcschemes/*.xcscheme
 
-*.xcworkspace/**
 !*.xcworkspace/*.xcworkspacedata
 
 Pods
