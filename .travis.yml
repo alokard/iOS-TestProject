@@ -4,14 +4,13 @@ env:
   - secure: W/rI0wRjHqJPqC5e60ynndTpgNHqT4WcEgEH7vjPTuGJZMG3N6IzPYWrhoLu+UZRvpYVM32vmZk0LW8KJV2vQxaVjnq/AbLuzS7T+g0IXUK29rC/+3MNy6D55Znm9ycOjnDQevPe4SoCGOKLtk2SKimkSG4cN7e6QZ5DHWRrWGA=
   - secure: b4KWw2UZpa+aILtYktQuzK3NQ0+quUyY7630P9dsTztavmT8Hd4OcjIkqUym3+ZcnKKUoNI6DZTITg8TKxf3zPAxdvDzydBlOrhu3kxxeLv4EeKFYk9xBnUdtTXqx3RxjZ+ZSOXDEuyTWmpl4JuYGxOWYBRFtNQKKF7rM0a5phQ=
   - APP_NAME="TestProject"
-  - 'DEVELOPER_NAME="iPhone Distribution: WORLDVENTURES HOLDINGS LLC"'
+  - 'DEVELOPER_NAME="iPhone Distribution: WORLDVENTURES HOLDINGS, LLC"'
   - PROFILE_NAME="provision"
 before_script:
   - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/provision.mobileprovision.enc -d -a -out scripts/profile/provision.mobileprovision
   - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a -out scripts/certs/dist.cer
   - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a -out scripts/certs/dist.p12
   - ./scripts/add-key.sh
-  - ./scripts/update-pods.sh
 script:
   - xctool -workspace TestProject.xcworkspace -scheme TestProject -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO
 after_success:
