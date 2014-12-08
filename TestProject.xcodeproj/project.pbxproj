@@ -737,6 +737,7 @@
 			baseConfigurationReference = 425DB639B5E3C8134325A7C2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestProject/Supporting Files/TestProject-Prefix.pch";
 				INFOPLIST_FILE = "TestProject/Supporting Files/TestProject-Info.plist";
